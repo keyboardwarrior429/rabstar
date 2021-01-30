@@ -1,0 +1,51 @@
+<style>
+  #active {
+    color:red;
+  }
+  .saw {
+    color:gray;
+  }
+  a {
+    color:black;
+    text-decoration: none;
+  }
+  h1 {
+    font-size:100px;
+    text-align: center;
+    border-bottom: 5px solid red;
+    margin:0;
+  }
+  ol{
+    border-right: 5px solid red;
+    width:80px;
+    margin:0;
+    padding:20px;
+  }
+  p{
+    text-align:left;
+  }
+  body{
+    margin:0;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
+    }
+    ol{
+      border-right: 0px solid red;
+      width:80px;
+      margin:0;
+      padding:20px;
+    }
+    h1 {
+      font-size:100px;
+      text-align: center;
+      border-bottom: 0px solid red;
+      margin:0;
+  }
+  }
+</style>
