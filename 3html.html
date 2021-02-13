@@ -6,10 +6,38 @@
     <link rel="stylesheet" href="htmlstyle.css">
   </head>
   <body>
-    <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white'">
-    <input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';">
+    <input type= "button" id = "night_day" value= "night" onclick= "
+    var x = document.querySelector('body');
+    if(this.value ==='night'){
+      x.style.backgroundColor = 'black';
+      x.style.color = 'white';
+      this.value = 'day';
+      var link = document.querySelectorAll('a');
+      var i = 0;
+      while(i<link.length){
+        link[i].style.color='powder blue';
+        i=i+1;
+      }
+    } else if(this.value === 'day') {
+      x.style.backgroundColor = 'white';
+      x.style.color = 'black';
+      this.value = 'dawn';
+      var link = document.querySelectorAll('a');
+      var i = 0;
+      while(i<link.length){
+        link[i].style.color='blue';
+        i=i+1;
+    } else if(this.value === 'dawn'){
+      x.style.backgroundColor = 'orange';
+      x.style.color = 'purple';
+      this.value = 'night';
+      var link = document.querySelectorAll('a');
+      var i = 0;
+      while(i<link.length){
+        link[i].style.color='purple';
+        i=i+1;
+    }
+    ">
     <h1>JAVASCRIPT</h1>
     <div id="grid">
     <ol>
